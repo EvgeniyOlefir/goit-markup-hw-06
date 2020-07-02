@@ -505,8 +505,26 @@
     <div data-backdrop class="backdrop">
       <div class="modal">
         <b class="modal-name">Оставьте свои данные, мы вам перезвоним</b>
-        <form action="">
+        <form>
+          <label class="modal-input">Имя
+            <input class="input-field" type="text" name="name">
+          </label>
+          <label class="modal-input">Телефон
+            <input class="input-field" type="tel" name="tel">
+          </label>
+          <label class="modal-input">Почта
+            <input class="input-field" type="email" name="email">
+          </label>
+          <textarea class="input-field" name="comment" id="" rows="10" placeholder="Комментарий"></textarea>
           
+          <label class="modal-input checkbox-field">
+            <input class="checkbox" type="checkbox">
+            <span>Соглашаюсь с рассылкой и принимаю
+            <a href="#">Условия договора</a>
+          </span>
+          </label>
+          <button type="submit" class="button">Отправить</button>
+
         </form>
         <button data-close-modal>Close modal</button>
       </div>
