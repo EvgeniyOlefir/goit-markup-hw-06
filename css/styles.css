@@ -820,6 +820,7 @@ p {
   height: 100%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
 }
 
 .backdrop.is-hidden {
@@ -867,4 +868,26 @@ p {
 
 textarea {
   resize: none;
+}
+
+.modal-close {
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  transform: translate(-130%, 130%);
+  background-color: var(--white);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: fill var(--timing-function);
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
 }

@@ -63,8 +63,43 @@
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <a data-open-modal href="" class="button">Заказать услугу</a>
+        <a data-open-modal href="#" class="button">Заказать услугу</a>
       </section>
+
+      <!-- Модальное окно -->
+
+    <div data-backdrop class="backdrop is-hidden">
+      <div class="modal">
+        <b class="modal-name">Оставьте свои данные, мы вам перезвоним</b>
+        <form>
+          <input class="input-field" type="text" name="name">
+          <label class="modal-input" id="name">Имя
+            
+          </label>
+          <label class="modal-input">Телефон
+            <input class="input-field" type="tel" name="tel">
+          </label>
+          <label class="modal-input">Почта
+            <input class="input-field" type="email" name="email">
+          </label>
+          <textarea class="input-field" name="comment" id="" rows="10" placeholder="Комментарий"></textarea>
+          
+          <label class="modal-input checkbox-field">
+            <input class="checkbox" type="checkbox">
+            <span>Соглашаюсь с рассылкой и принимаю
+            <a href="#">Условия договора</a>
+          </span>
+          </label>
+          <button type="submit" class="button">Отправить</button>
+
+        </form>
+        <button data-close-modal class="modal-close">
+          <svg width="11px" height="11px">
+            <use href="./images/symbol-defs.svg#icon-modal-close"></use> 
+          </svg>
+        </button>
+      </div>
+    </div>
 
       <!--Особенности-->
       
@@ -500,36 +535,6 @@
       </div>
     </footer>
     
-    <!-- Модальное окно -->
-
-    <div data-backdrop class="backdrop">
-      <div class="modal">
-        <b class="modal-name">Оставьте свои данные, мы вам перезвоним</b>
-        <form>
-          <label class="modal-input">Имя
-            <input class="input-field" type="text" name="name">
-          </label>
-          <label class="modal-input">Телефон
-            <input class="input-field" type="tel" name="tel">
-          </label>
-          <label class="modal-input">Почта
-            <input class="input-field" type="email" name="email">
-          </label>
-          <textarea class="input-field" name="comment" id="" rows="10" placeholder="Комментарий"></textarea>
-          
-          <label class="modal-input checkbox-field">
-            <input class="checkbox" type="checkbox">
-            <span>Соглашаюсь с рассылкой и принимаю
-            <a href="#">Условия договора</a>
-          </span>
-          </label>
-          <button type="submit" class="button">Отправить</button>
-
-        </form>
-        <button data-close-modal>Close modal</button>
-      </div>
-    </div>
-
     <script src="./js/modal.js"></script>
 
   </body>
