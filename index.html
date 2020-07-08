@@ -72,16 +72,31 @@
       <div class="modal">
         <b class="modal-name">Оставьте свои данные, мы вам перезвоним</b>
         <form>
-          <input class="input-field" type="text" name="name">
-          <label class="modal-input" id="name">Имя
-            
+          
+          <label class="modal-input" for="name">
+            <input class="input-field" type="text" name="name" id="name" placeholder=" ">
+            <span class="input-label">Имя</span>
+            <svg class="modal-icon" width="12px" height="12px" >
+                <use href="./images/symbol-defs.svg#icon-modal-name"></use> 
+              </svg>
           </label>
-          <label class="modal-input">Телефон
-            <input class="input-field" type="tel" name="tel">
+
+          <label class="modal-input">
+            <input class="input-field" type="tel" name="tel" placeholder=" ">
+            <span class="input-label">Телефон</span>
+              <svg class="modal-icon" width="12px" height="12px" >
+                <use href="./images/symbol-defs.svg#icon-modal-phone"></use> 
+              </svg>
           </label>
-          <label class="modal-input">Почта
-            <input class="input-field" type="email" name="email">
+
+          <label class="modal-input">
+            <input class="input-field" type="email" name="email" placeholder=" ">
+            <span class="input-label">Почта</span>
+            <svg class="modal-icon" width="15px" height="12px" >
+                <use href="./images/symbol-defs.svg#icon-modal-mail"></use> 
+              </svg>
           </label>
+
           <textarea class="input-field" name="comment" id="" rows="10" placeholder="Комментарий"></textarea>
           
           <label class="modal-input checkbox-field">
