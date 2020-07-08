@@ -879,7 +879,8 @@ p {
   color: var(--primary-text-color);
 }
 
-.modal-input:focus-within > .modal-icon {
+.modal-input:focus-within > .modal-icon,
+.input-field:not(:placeholder-shown) ~ .modal-icon {
   fill: var(--accent-color);
 }
 
@@ -897,17 +898,29 @@ p {
 
 .input-field:not(:placeholder-shown) + .input-label {
   transform: translate(-25px, -35px);
+
   font-size: 12px;
   line-height: 1.17px;
   color: var(--accent-color);
 }
 
-.input-field:not(:placeholder-shown) ~ .modal-icon {
-  fill: var(--accent-color);
-}
-
 textarea {
   resize: none;
+}
+
+.input-field.textarea {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+  padding-left: 16px;
+  transition: border-color var(--timing-function);
+}
+
+textarea.input-field:focus-within,
+textarea.input-field:not(:placeholder-shown) {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .modal-close {
