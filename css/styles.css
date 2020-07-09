@@ -957,7 +957,7 @@ textarea.input-field:not(:placeholder-shown) {
   transition: transform var(--timing-function), color var(--timing-function);
 }
 
-.modal-button {
+.button.modal-button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -970,4 +970,17 @@ textarea.input-field:not(:placeholder-shown) {
   text-align: center;
   letter-spacing: 0.06em;
   transition: fill var(--duration) var(--timing);
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button.modal-button:hover,
+.button.modal-button:focus {
+  background-color: var(--white);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
