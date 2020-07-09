@@ -983,15 +983,40 @@ textarea.input-field:not(:placeholder-shown) {
   background-color: var(--white);
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  
 }
 
 .submit {
-      font-weight: 900;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
-    transition: color var(--timing-function);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  transition: color var(--timing-function);
 }
+
+/* .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+} */
+
+.checkbox-icon {
+  display: inline-block;
+  margin-right: 8px;
+  width: 100px;
+  height: 100px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+
+  border-color: transparent;
+  background-origin: border-box;
+  background-image: url(../images/check.svg);
+  background-size: contain;
 }
