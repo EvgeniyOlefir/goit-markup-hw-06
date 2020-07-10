@@ -888,13 +888,11 @@ p {
 }
 
 .modal-input:focus-within > .modal-icon,
-.modal-input:hover > .modal-icon,
 .input-field:not(:placeholder-shown) ~ .modal-icon {
   fill: var(--accent-color);
 }
 
-.modal-input:focus-within > .input-label,
-.modal-input:hover > .input-label {
+.modal-input:focus-within > .input-label {
   transform: translate(-25px, -35px);
   font-size: 12px;
   line-height: 1.17px;
@@ -1029,4 +1027,8 @@ textarea.input-field:not(:placeholder-shown) {
   background-origin: border-box;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
+}
+
+.modal-link {
+  color: var(--accent-color);
 }
